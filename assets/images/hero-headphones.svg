@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 550" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headbandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="30%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="70%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <linearGradient id="metalArm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <linearGradient id="cupGradLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="cupGradRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="purpleNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="neonGlowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="18" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="ambientBackdrop" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Background Blobs -->
+  <circle cx="190" cy="280" r="140" fill="#06b6d4" opacity="0.22" filter="url(#ambientBackdrop)"/>
+  <circle cx="410" cy="280" r="140" fill="#a855f7" opacity="0.22" filter="url(#ambientBackdrop)"/>
+
+  <!-- Soundwave Rings Aura -->
+  <g opacity="0.4">
+    <ellipse cx="300" cy="275" rx="270" ry="210" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6, 12"/>
+    <ellipse cx="300" cy="275" rx="230" ry="175" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4, 10"/>
+    <ellipse cx="300" cy="275" rx="190" ry="140" fill="none" stroke="#06b6d4" stroke-width="1"/>
+  </g>
+
+  <!-- Floating Audio Spec Badges -->
+  <!-- Left Float Badge: 45H Battery -->
+  <g transform="translate(40, 160)" class="float-badge">
+    <rect width="115" height="52" rx="14" fill="#0f172a" fill-opacity="0.85" stroke="#06b6d4" stroke-width="1.5"/>
+    <circle cx="28" cy="26" r="12" fill="#083344"/>
+    <path d="M24 23 L28 20 L27 25 L32 25 L26 32 L27 27 L23 27 Z" fill="#22d3ee"/>
+    <text x="48" y="24" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">PIN KHỦNG</text>
+    <text x="48" y="40" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="800">45 Giờ</text>
+  </g>
+
+  <!-- Right Float Badge: 48dB ANC -->
+  <g transform="translate(445, 160)" class="float-badge">
+    <rect width="125" height="52" rx="14" fill="#0f172a" fill-opacity="0.85" stroke="#a855f7" stroke-width="1.5"/>
+    <circle cx="28" cy="26" r="12" fill="#3b0764"/>
+    <path d="M23 26 Q28 19 33 26 Q28 33 23 26" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="28" cy="26" r="2.5" fill="#f43f5e"/>
+    <text x="48" y="24" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">ANC CHỦ ĐỘNG</text>
+    <text x="48" y="40" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="800">-48 dB</text>
+  </g>
+
+  <!-- Bottom Float Badge: Hi-Res Audio -->
+  <g transform="translate(230, 475)">
+    <rect width="140" height="42" rx="21" fill="#090d16" fill-opacity="0.9" stroke="url(#cyanNeon)" stroke-width="1.5"/>
+    <text x="70" y="26" fill="#38bdf8" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" letter-spacing="1.5">HI-RES AUDIO CERTIFIED</text>
+  </g>
+
+  <!-- Headset Structure -->
+  <!-- Outer Headband Arc -->
+  <path d="M 155 310 C 155 120, 445 120, 445 310" 
+        fill="none" 
+        stroke="url(#headbandGrad)" 
+        stroke-width="32" 
+        stroke-linecap="round"/>
+
+  <!-- Inner Soft Cushion -->
+  <path d="M 175 280 C 175 140, 425 140, 425 280" 
+        fill="none" 
+        stroke="#0b1120" 
+        stroke-width="16" 
+        stroke-linecap="round"/>
+
+  <!-- Accent strip along top headband -->
+  <path d="M 230 148 C 275 138, 325 138, 370 148" 
+        fill="none" 
+        stroke="url(#cyanNeon)" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        filter="url(#neonGlowCyan)"/>
+
+  <!-- Left Slider Arm (Metal Extension) -->
+  <rect x="146" y="280" width="18" height="60" rx="9" fill="url(#metalArm)"/>
+  <rect x="151" y="295" width="8" height="30" rx="4" fill="#06b6d4" opacity="0.8"/>
+
+  <!-- Right Slider Arm (Metal Extension) -->
+  <rect x="436" y="280" width="18" height="60" rx="9" fill="url(#metalArm)"/>
+  <rect x="441" y="295" width="8" height="30" rx="4" fill="#a855f7" opacity="0.8"/>
+
+  <!-- Left Hinge Pivot -->
+  <circle cx="155" cy="335" r="16" fill="#1e293b" stroke="#334155" stroke-width="3"/>
+  <circle cx="155" cy="335" r="8" fill="#06b6d4"/>
+
+  <!-- Right Hinge Pivot -->
+  <circle cx="445" cy="335" r="16" fill="#1e293b" stroke="#334155" stroke-width="3"/>
+  <circle cx="445" cy="335" r="8" fill="#8b5cf6"/>
+
+  <!-- Left Ear Cup (Angled) -->
+  <g transform="rotate(10 155 375)">
+    <!-- Outer Cushion Shadow/Depth -->
+    <ellipse cx="140" cy="375" rx="48" ry="76" fill="#030712"/>
+    <!-- Memory Foam Cushion -->
+    <ellipse cx="148" cy="375" rx="44" ry="72" fill="#1e293b" stroke="#334155" stroke-width="3"/>
+    <!-- Outer Shell Outer Ring -->
+    <ellipse cx="160" cy="375" rx="38" ry="64" fill="url(#cupGradLeft)" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Glowing Ring on Left Shell -->
+    <ellipse cx="164" cy="375" rx="26" ry="46" fill="none" stroke="#06b6d4" stroke-width="3" filter="url(#neonGlowCyan)"/>
+    <!-- Touch Sensor Center Disc -->
+    <circle cx="166" cy="375" r="18" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <!-- Nova Sound Wave Icon on left disc -->
+    <path d="M158 375 L163 367 L166 383 L170 371 L174 375" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Ear Cup (Angled) -->
+  <g transform="rotate(-10 445 375)">
+    <!-- Outer Cushion Shadow/Depth -->
+    <ellipse cx="460" cy="375" rx="48" ry="76" fill="#030712"/>
+    <!-- Memory Foam Cushion -->
+    <ellipse cx="452" cy="375" rx="44" ry="72" fill="#1e293b" stroke="#334155" stroke-width="3"/>
+    <!-- Outer Shell Outer Ring -->
+    <ellipse cx="440" cy="375" rx="38" ry="64" fill="url(#cupGradRight)" stroke="#c084fc" stroke-width="1.5"/>
+    <!-- Glowing Ring on Right Shell -->
+    <ellipse cx="436" cy="375" rx="26" ry="46" fill="none" stroke="#a855f7" stroke-width="3"/>
+    <!-- Touch Sensor Center Disc -->
+    <circle cx="434" cy="375" r="18" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <!-- Nova Sound Wave Icon on right disc -->
+    <path d="M426 375 L431 367 L434 383 L438 371 L442 375" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Audio Waveform Graphic under the headset -->
+  <g transform="translate(160, 440)" opacity="0.8">
+    <rect x="20" y="14" width="4" height="22" rx="2" fill="#06b6d4"/>
+    <rect x="35" y="6" width="4" height="38" rx="2" fill="#06b6d4"/>
+    <rect x="50" y="16" width="4" height="18" rx="2" fill="#22d3ee"/>
+    <rect x="65" y="0" width="4" height="50" rx="2" fill="#38bdf8"/>
+    <rect x="80" y="10" width="4" height="30" rx="2" fill="#38bdf8"/>
+    <rect x="95" y="18" width="4" height="14" rx="2" fill="#60a5fa"/>
+    <rect x="110" y="4" width="4" height="42" rx="2" fill="#818cf8"/>
+    <rect x="125" y="12" width="4" height="26" rx="2" fill="#a78bfa"/>
+    <rect x="140" y="2" width="4" height="46" rx="2" fill="#c084fc"/>
+    <rect x="155" y="16" width="4" height="18" rx="2" fill="#a855f7"/>
+    <rect x="170" y="8" width="4" height="34" rx="2" fill="#c084fc"/>
+    <rect x="185" y="20" width="4" height="10" rx="2" fill="#9333ea"/>
+    <rect x="200" y="12" width="4" height="26" rx="2" fill="#8b5cf6"/>
+    <rect x="215" y="4" width="4" height="42" rx="2" fill="#6366f1"/>
+    <rect x="230" y="15" width="4" height="20" rx="2" fill="#06b6d4"/>
+    <rect x="245" y="8" width="4" height="34" rx="2" fill="#38bdf8"/>
+    <rect x="260" y="18" width="4" height="14" rx="2" fill="#22d3ee"/>
+  </g>
+</svg>

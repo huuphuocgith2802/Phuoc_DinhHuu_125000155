@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="diaphragmGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#0284c7" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#1e293b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="coilGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="400" rx="20" fill="#0c1322" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Concentric Driver Rings -->
+  <circle cx="250" cy="200" r="160" fill="none" stroke="#1e293b" stroke-width="6"/>
+  <circle cx="250" cy="200" r="145" fill="none" stroke="#06b6d4" stroke-width="2" stroke-dasharray="6, 8" opacity="0.6"/>
+  <circle cx="250" cy="200" r="130" fill="url(#diaphragmGrad)"/>
+  
+  <!-- Graphene Pattern Rings -->
+  <circle cx="250" cy="200" r="105" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="250" cy="200" r="80" fill="none" stroke="#c084fc" stroke-width="2"/>
+  <circle cx="250" cy="200" r="55" fill="#1e293b" stroke="url(#coilGrad)" stroke-width="4"/>
+  <circle cx="250" cy="200" r="28" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+  <circle cx="250" cy="200" r="10" fill="#06b6d4"/>
+
+  <!-- Callout Markers & Lines -->
+  <!-- Line 1: 40mm Graphene Diaphragm -->
+  <line x1="140" y1="120" x2="60" y2="70" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="140" cy="120" r="4" fill="#38bdf8"/>
+  <text x="50" y="55" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">MÀNG LOA GRAPHENE 40MM</text>
+  <text x="50" y="70" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Tái tạo âm bass sâu &amp; treble trong trẻo</text>
+
+  <!-- Line 2: Neodymium Magnet & Copper Voice Coil -->
+  <line x1="280" y1="230" x2="420" y2="310" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="280" cy="230" r="4" fill="#f59e0b"/>
+  <text x="430" y="305" fill="#f59e0b" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">CUỘN DÂY ĐỒNG CCAW</text>
+  <text x="430" y="320" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Độ nhạy cực cao, méo tiếng &lt; 0.05%</text>
+
+  <!-- Line 3: Dual Smart ANC Microphones -->
+  <line x1="360" y1="140" x2="420" y2="90" stroke="#c084fc" stroke-width="1.5"/>
+  <circle cx="360" cy="140" r="4" fill="#c084fc"/>
+  <text x="430" y="85" fill="#c084fc" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">DUAL MICROPHONES ANC</text>
+  <text x="430" y="100" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Khử ồn thời gian thực 380,000 lần/giây</text>
+</svg>
